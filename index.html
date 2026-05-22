@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الكوكيز المميز</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- أيقونات FontAwesome للتواصل الاجتماعي -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر ونظام التنقل -->
+    <header>
+        <div class="logo">🍪 كوكيز تايم</div>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#why-us">تميزنا</a>
+            <a href="#trending">المنيو</a>
+            <a href="#reviews">آراء العملاء</a>
+            <a href="#contact">اتصل بنا</a>
+        </nav>
+    </header>
+
+    <!-- أولاً: قسم البطل (Hero Section) مع صورة الكوكيز الكبيرة -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>أقوى كوكيز مقرمش وطري في مكان واحد!</h1>
+            <p>نخبزها بحب يومياً لتصلكم طازجة ودافئة.</p>
+            <a href="https://wa.me/962780028321" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> اطلب الآن عبر الواتساب
+            </a>
+        </div>
+        <div class="hero-image">
+            <!-- يمكنك تغيير رابط الصورة هنا بصورة الكوكيز الخاصة بك -->
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="صورة كوكيز شهي">
+        </div>
+    </section>
+
+    <!-- سابعاً: قسم "ليه الكوكيز تبعتنا مميز" -->
+    <section id="why-us" class="features-section">
+        <h2>ليه الكوكيز تبعتنا مميز؟ ✨</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-cookie-bite"></i>
+                <h3>مكونات فاخرة</h3>
+                <p>نستخدم أجود أنواع الشوكولاتة البلجيكية والزبدة الطبيعية.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-fire"></i>
+                <h3>طازج يومياً</h3>
+                <p>يُخبز الكوكيز فور طلبك ليصلك بحالة مثالية وطعم لا يُقاوم.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>سر الصنعة</h3>
+                <p>وصفة خاصة تجمع بين القرمشة الخارجية والطراوة الذائبة من الداخل.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ثالثاً: قسم المنيو الكامل للكوكيز المميز -->
+    <section id="trending" class="products-section">
+        <h2>🍪 منيو الكوكيز المميز</h2>
+        <p class="section-subtitle">اختر تصنيفك المفضل وتلذّذ بالطعم الإبداعي</p>
+
+        <div class="products-grid">
+            
+            <div class="product-card" data-category="national">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="كب كيك الشماغ والعلم">
+                    <span class="badge">الأكثر مبيعاً 🇯🇴</span>
+                </div>
+                <h3>كب كيك المناسبات الوطنية</h3>
+                <p>كب كيك فاخر مزين بحب بتفاصيل الشماغ الأردني الأصيل وعلم الوطن برونق مخملي.</p>
+            </div>
+
+            <div class="product-card" data-category="national">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80" alt="كوكيز خريطة الأردن">
+                    <span class="badge">إصدار خاص 🗺️</span>
+                </div>
+                <h3>كوكيز خريطة الأردن السعيد</h3>
+                <p>قطع كوكيز هشة ومقرمشة مصممة بدقة على شكل خريطة الأردن ومزينة بألوان العلم الزاهية.</p>
+            </div>
+
+            <div class="product-card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514517604298-cf80e0fb7f1e?auto=format&fit=crop&w=500&q=80" alt="كوكيز عيد مبارك">
+                    <span class="badge">موسمي ✨</span>
+                </div>
+                <h3>بوكس كوكيز العيد الفاخر</h3>
+                <p>تشكيلة كوكيز فاخرة بنقوش إسلامية، عبارات "Eid Mubarak"، وأشكال خراف الكعك اللطيفة بلون وردي وذهبي.</p>
+            </div>
+
+            <div class="product-card" data-category="giant">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1612203980229-efe9a5a5be1e?auto=format&fit=crop&w=500&q=80" alt="بيتزا كوكيز">
+                    <span class="badge">جديد 🍕</span>
+                </div>
+                <h3>بيتزا كوكيز النكهات المشكلة</h3>
+                <p>كعكة كوكيز عملاقة مقسمة إلى مثلثات غنية بالكريمة الناعمة، حبيبات الشوكولاتة، والفارمسيل الملون.</p>
+            </div>
+
+            <div class="product-card" data-category="giant">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="كعكة كوكيز الشوكولاتة">
+                    <span class="badge">فخامة 🎂</span>
+                </div>
+                <h3>كعكة الكوكيز بالتشوكليت فودج</h3>
+                <p>كعكة كوكيز دائرية غنية بقطع الشوكولاتة، ومزينة بإطار فاخر من روزيتات كريم غاناش الشوكولاتة الذائبة.</p>
+            </div>
+
+            <div class="product-card" data-category="giant">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1558961317-192757558d04?auto=format&fit=crop&w=500&q=80" alt="كعكة كوكيز كلاسيك">
+                    <span class="badge">حجم عائلي 🍪</span>
+                </div>
+                <h3>كعكة الكوكيز الكلاسيكية بالحبيبات</h3>
+                <p>النسخة العملاقة من الكوكيز التقليدي الذهبي، مقرمش من الأطراف وطري جداً من المنتصف مع السبرنكلز.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?auto=format&fit=crop&w=500&q=80" alt="كوكيز رد فلفت">
+                    <span class="badge">الأكثر طلباً ❤️</span>
+                </div>
+                <h3>كوكيز المخمل الأحمر (Red Velvet)</h3>
+                <p>كوكيز الرد فلفت الفاخر بلونه الأحمر الساحر، محشي بقلب غني وذائب من كريم تشيز غني ودسم.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1570476922354-81227cdbb76c?auto=format&fit=crop&w=500&q=80" alt="دبل تشوكليت كوكيز">
+                </div>
+                <h3>كوكيز غاناش الشوكولاتة المزدوجة</h3>
+                <p>لعشاق الكاكاو الحقيقي، عجينة شوكولاتة داكنة غنية بحبيبات شوكولاتة الحليب هشة وذائبة بالكامل.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80" alt="كوكيز كلاسيك ذائب">
+                    <span class="badge">ملكي 👑</span>
+                </div>
+                <h3>كوكيز الشوكولاتة الذائبة المتفجرة</h3>
+                <p>كوكيز مخبوز لدرجة الكمال، ينفجر بقطع الشوكولاتة الساخنة والذائبة عند قضمه مباشرة.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="كوكيز كراكل السكر">
+                </div>
+                <h3>كوكيز الشوكولاتة المتشققة (Crinkle)</h3>
+                <p>كوكيز فدج غني جداً مغطى بطبقة ثلجية من السكر الناعم، يتميز بتشقاته الرائعة وقوامه الشبيه بالبراونيز.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="كوكيز براونيز غني">
+                    <span class="badge">الأكثر طلباً 🍫</span>
+                </div>
+                <h3>برج كوكيز البراونيز المتشقق</h3>
+                <p>مزيج ساحر بين كوكيز الشوكولاتة وقوام البراونيز الفدجي الغني، مقرمش من الخارج وطري يذوب بالفم من الداخل مع رشة ملح بحري ناعمة.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1618923850107-d1a234d7a73a?auto=format&fit=crop&w=500&q=80" alt="ساندويش كوكيز رد فلفت">
+                    <span class="badge">إصدار فاخر 🧁</span>
+                </div>
+                <h3>ساندويش المخمل الأحمر الفاخر</h3>
+                <p>طبقتان من كوكيز الرد فلفت الطري، تحضنان في وسطهما طبقة غنية وكثيفة من كريمة الجبن (الكريم تشيز) الحامضة والحلوة لتوائم مثالي.</p>
+            </div>
+
+            <div class="product-card" data-category="classic">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514517604298-cf80e0fb7f1e?auto=format&fit=crop&w=500&q=80" alt="كوكيز رد فلفت كلاسيك">
+                </div>
+                <h3>كوكيز الرد فلفت بالشوكولاتة البيضاء</h3>
+                <p>قطع كوكيز مخملية حمراء غنية بقطع الشوكولاتة البيضاء الفاخرة التي تضفي حلاوة متوازنة ونعومة مع كل قضمة.</p>
+            </div>
+
+            <div class="product-card" data-category="events">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80" alt="كوكيز سولتد كراميل">
+                    <span class="badge">مميز جداً 🍯</span>
+                </div>
+                <h3>كوكيز السولتد كراميل الدافئ</h3>
+                <p>كوكيز الزبدة الهش بلمسة إبداعية، محشي في المنتصف ببحيرة من الكراميل السائل الذهبي المزين بحبيبات الملح البحري الفاخر.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- سادساً: تقييمات وآراء العملاء -->
+    <section id="reviews" class="reviews-section">
+        <h2>ماذا يقول عملاؤنا؟ 🥰</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"أطعم كوكيز ذقته بحياتي! خفيف وطري والشوكولاتة طعمها حقيقي مش تجاري."</p>
+                <h4>- سارة أحمد</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"التوصيل سريع والتعامل راقي جداً، والكوكيز وصلني دافي كأنه هسا طالع من الفرن."</p>
+                <h4>- محمد علي</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- خامساً وجزء من الـ QR: قسم اتصل بنا والـ QR المطور للموقع -->
+    <section id="contact" class="contact-section">
+        <h2>تواصل معنا 📞</h2>
+        <div class="contact-container">
+            <!-- روابط التواصل -->
+            <div class="contact-info">
+                <h3>يسعدنا تواصلك في أي وقت:</h3>
+                
+                <!-- افكت الانستغرام المطلب والواتساب -->
+                <a href="https://www.instagram.com/mz2.vv?igsh=bTVlbXBmMTE0aXpn" target="_blank" class="social-link instagram-effect">
+                    <i class="fab fa-instagram"></i> تابعنا على انستغرام
+                </a>
+                
+                <a href="https://wa.me/962780028321" target="_blank" class="social-link whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> تواصل عبر الواتساب (0780028321)
+                </a>
+                
+                <a href="#" class="social-link facebook-link">
+                    <i class="fab fa-facebook-f"></i> صفحتنا على فيسبوك
+                </a>
+            </div>
+
+            <!-- عرض الـ QR للموقع -->
+            <div class="qr-code-box">
+                <h3>امسح الكود لزيارة موقعنا</h3>
+                <!-- سيتم توليد الـ QR تلقائياً داخل هذا الديف عبر الجافاسكريبت -->
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- رابعاً: الفوتر محتوي على الشروط والأحكام وسياسة الخصوصية -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 جميع الحقوق محفوظة لمتجر كوكيز تايم.</p>
+            <div class="footer-links">
+                <a href="#privacy">سياسة الخصوصية</a> | 
+                <a href="#terms">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- جافاسكريبت لتوليد الـ QR كود تلقائياً -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
